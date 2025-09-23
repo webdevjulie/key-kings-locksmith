@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Success - Key Kings Locksmith</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional: subtle pulse animation */
+        @keyframes pulse-glow {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        .animate-pulse {
+            animation: pulse-glow 2s infinite;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[rgba(249,237,237,1)]">
+
+    <!-- Booking Success Message Section -->
+    <section class="relative text-[#1C1C1C] py-20 md:py-24">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+
+            <!-- Success Icon -->
+            <div class="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-r from-[#FD9A00] to-[#F58600] rounded-full mb-6 shadow-lg animate-pulse">
+                <span class="material-icons text-white text-6xl">check_circle</span>
+            </div>
+
+            <!-- Main Message -->
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
+                Thank You for Booking with Key Kings Locksmith
+            </h2>
+
+            <!-- Subtext / Next Steps -->
+            <p class="text-lg md:text-xl mb-6">
+                We’ll contact you soon to confirm your appointment. In the meantime, for emergencies, call our 
+                <a href="tel:8649009597" class="font-semibold text-[#FD9A00]">emergency line</a>.
+            </p>
+
+            <!-- Quick Links -->
+            <div class="flex flex-wrap justify-center gap-6 mt-4 text-lg">
+                <a href="reviews.html" class="font-semibold text-[#FD9A00] hover:text-[#F58600] transition">Reviews</a>
+                <a href="faq.html" class="font-semibold text-[#FD9A00] hover:text-[#F58600] transition">FAQ</a>
+                <a href="index.html" class="font-semibold text-[#FD9A00] hover:text-[#F58600] transition">Home</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
