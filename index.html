@@ -189,8 +189,12 @@
   <div class="h-20"></div>
 
   <!-- Enhanced Hero Section with Booking -->
-<section class="relative bg-cover bg-center text-white min-h-screen flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 lg:px-12 gap-8 md:gap-16"
-  style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=2070&q=80');">
+<section class="relative text-white min-h-screen flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 lg:px-12 gap-8 md:gap-16 overflow-hidden">
+
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+    <source src="./video/bg.mp4" type="video/mp4">
+  </video>
 
   <!-- Dark Overlay -->
   <div class="absolute inset-0 bg-gradient-to-br from-black/80 via-black/70 to-brand-dark/60"></div>
@@ -235,6 +239,24 @@
           </span>
         </a>
       </div>
+
+      <!-- Trust Badges -->
+               <!-- Badges -->
+                <div class="flex gap-2 mt-4 justify-center md:justify-start flex-nowrap overflow-x-auto">
+                    <span class="inline-flex items-center gap-1 bg-white/10 border border-[#F58600ff] rounded-full px-3 py-1.5 text-[10px] sm:text-xs shadow-lg backdrop-blur-md text-white whitespace-nowrap">
+                        <span class="material-icons text-[#F58600ff] text-[12px]">verified</span>
+                        Licensed & Insured
+                    </span>
+                    <span class="inline-flex items-center gap-1 bg-white/10 border border-[#F58600ff] rounded-full px-3 py-1.5 text-[10px] sm:text-xs shadow-lg backdrop-blur-md text-white whitespace-nowrap">
+                        <span class="material-icons text-[#F58600ff] text-[12px]">schedule</span>
+                        Available 24/7
+                    </span>
+                    <span class="inline-flex items-center gap-1 bg-white/10 border border-[#F58600ff] rounded-full px-3 py-1.5 text-[10px] sm:text-xs shadow-lg backdrop-blur-md text-white whitespace-nowrap">
+                        <span class="material-icons text-[#F58600ff] text-[12px]">speed</span>
+                        Fast Response Time
+                    </span>
+                </div>
+
     </div>
 
     <!-- Booking Form -->
@@ -1290,10 +1312,6 @@
         <li><a href="emergency-locksmith.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
           <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">lock_clock</span> 
           <span class="font-medium">Emergency Locksmith</span>
-        </a></li>
-        <li><a href="lock-installation.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
-          <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">vpn_key</span> 
-          <span class="font-medium">Lock Installation</span>
         </a></li>
       </ul>
     </div>
