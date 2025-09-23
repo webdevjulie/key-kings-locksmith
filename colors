@@ -1,0 +1,127 @@
+- Tailwind
+
+{ 'rose_quartz': { DEFAULT: '#B7A1A5', 100: '#271e1f', 200: '#4d3b3f', 300: '#74595e', 400: '#98797f', 500: '#b7a1a5', 600: '#c4b3b6', 700: '#d3c6c8', 800: '#e2d9db', 900: '#f0eced' }, 'xanthous': { DEFAULT: '#F9AE19', 100: '#362401', 200: '#6b4903', 300: '#a16d04', 400: '#d79106', 500: '#f9ae19', 600: '#fabf48', 700: '#fbcf76', 800: '#fddfa4', 900: '#feefd1' }, 'xanthous': { DEFAULT: '#F3BF60', 100: '#3f2a05', 200: '#7d5509', 300: '#bc7f0e', 400: '#eea61f', 500: '#f3bf60', 600: '#f5cc7e', 700: '#f8d89e', 800: '#fae5be', 900: '#fdf2df' }, 'umber': { DEFAULT: '#5F4B39', 100: '#130f0b', 200: '#261e17', 300: '#392d22', 400: '#4d3c2e', 500: '#5f4b39', 600: '#8c6e54', 700: '#af9279', 800: '#c9b6a6', 900: '#e4dbd2' }, 'butterscotch': { DEFAULT: '#D9933C', 100: '#2e1d09', 200: '#5c3b12', 300: '#8a581b', 400: '#b87624', 500: '#d9933c', 600: '#e0a762', 700: '#e8bd89', 800: '#f0d3b1', 900: '#f7e9d8' } }
+
+- CSV
+
+B7A1A5,F9AE19,F3BF60,5F4B39,D9933C
+
+- With #
+
+#B7A1A5, #F9AE19, #F3BF60, #5F4B39, #D9933C
+
+- Array
+
+["B7A1A5","F9AE19","F3BF60","5F4B39","D9933C"]
+
+- Object
+
+{"Rose quartz":"B7A1A5","Xanthous":"F9AE19","Xanthous 2":"F3BF60","Umber":"5F4B39","Butterscotch":"D9933C"}
+
+- Extended Array
+
+[{"name":"Rose quartz","hex":"B7A1A5","rgb":[183,161,165],"cmyk":[0,12,10,28],"hsb":[349,12,72],"hsl":[349,13,67],"lab":[68,9,1]},{"name":"Xanthous","hex":"F9AE19","rgb":[249,174,25],"cmyk":[0,30,90,2],"hsb":[40,90,98],"hsl":[40,95,54],"lab":[76,17,76]},{"name":"Xanthous","hex":"F3BF60","rgb":[243,191,96],"cmyk":[0,21,60,5],"hsb":[39,60,95],"hsl":[39,86,66],"lab":[80,8,54]},{"name":"Umber","hex":"5F4B39","rgb":[95,75,57],"cmyk":[0,21,40,63],"hsb":[28,40,37],"hsl":[28,25,30],"lab":[33,6,14]},{"name":"Butterscotch","hex":"D9933C","rgb":[217,147,60],"cmyk":[0,32,72,15],"hsb":[33,72,85],"hsl":[33,67,54],"lab":[66,19,55]}]
+
+- XML
+
+<palette>
+  <color name="Rose quartz" hex="B7A1A5" r="183" g="161" b="165" />
+  <color name="Xanthous" hex="F9AE19" r="249" g="174" b="25" />
+  <color name="Xanthous" hex="F3BF60" r="243" g="191" b="96" />
+  <color name="Umber" hex="5F4B39" r="95" g="75" b="57" />
+  <color name="Butterscotch" hex="D9933C" r="217" g="147" b="60" />
+</palette>
+
+
+/* CSS HEX */
+--rose-quartz: #B7A1A5ff;
+--xanthous: #F9AE19ff;
+--xanthous-2: #F3BF60ff;
+--umber: #5F4B39ff;
+--butterscotch: #D9933Cff;
+
+/* CSS HSL */
+--rose-quartz: hsla(349, 13%, 67%, 1);
+--xanthous: hsla(40, 95%, 54%, 1);
+--xanthous-2: hsla(39, 86%, 66%, 1);
+--umber: hsla(28, 25%, 30%, 1);
+--butterscotch: hsla(33, 67%, 54%, 1);
+
+/* SCSS HEX */
+$rose-quartz: #B7A1A5ff;
+$xanthous: #F9AE19ff;
+$xanthous-2: #F3BF60ff;
+$umber: #5F4B39ff;
+$butterscotch: #D9933Cff;
+
+/* SCSS HSL */
+$rose-quartz: hsla(349, 13%, 67%, 1);
+$xanthous: hsla(40, 95%, 54%, 1);
+$xanthous-2: hsla(39, 86%, 66%, 1);
+$umber: hsla(28, 25%, 30%, 1);
+$butterscotch: hsla(33, 67%, 54%, 1);
+
+/* SCSS RGB */
+$rose-quartz: rgba(183, 161, 165, 1);
+$xanthous: rgba(249, 174, 25, 1);
+$xanthous-2: rgba(243, 191, 96, 1);
+$umber: rgba(95, 75, 57, 1);
+$butterscotch: rgba(217, 147, 60, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #B7A1A5ff, #F9AE19ff, #F3BF60ff, #5F4B39ff, #D9933Cff);
+$gradient-right: linear-gradient(90deg, #B7A1A5ff, #F9AE19ff, #F3BF60ff, #5F4B39ff, #D9933Cff);
+$gradient-bottom: linear-gradient(180deg, #B7A1A5ff, #F9AE19ff, #F3BF60ff, #5F4B39ff, #D9933Cff);
+$gradient-left: linear-gradient(270deg, #B7A1A5ff, #F9AE19ff, #F3BF60ff, #5F4B39ff, #D9933Cff);
+$gradient-top-right: linear-gradient(45deg, #B7A1A5ff, #F9AE19ff, #F3BF60ff, #5F4B39ff, #D9933Cff);
+$gradient-bottom-right: linear-gradient(135deg, #B7A1A5ff, #F9AE19ff, #F3BF60ff, #5F4B39ff, #D9933Cff);
+$gradient-top-left: linear-gradient(225deg, #B7A1A5ff, #F9AE19ff, #F3BF60ff, #5F4B39ff, #D9933Cff);
+$gradient-bottom-left: linear-gradient(315deg, #B7A1A5ff, #F9AE19ff, #F3BF60ff, #5F4B39ff, #D9933Cff);
+$gradient-radial: radial-gradient(#B7A1A5ff, #F9AE19ff, #F3BF60ff, #5F4B39ff, #D9933Cff);
+
+
+/* CSS HEX */
+--licorice: #0C0000ff;
+--xanthous: #F9AE19ff;
+--tangerine: #F58600ff;
+--lavender-blush: #F9EDEDff;
+--orange-peel: #FD9A00ff;
+
+/* CSS HSL */
+--licorice: hsla(0, 100%, 2%, 1);
+--xanthous: hsla(40, 95%, 54%, 1);
+--tangerine: hsla(33, 100%, 48%, 1);
+--lavender-blush: hsla(0, 50%, 95%, 1);
+--orange-peel: hsla(37, 100%, 50%, 1);
+
+/* SCSS HEX */
+$licorice: #0C0000ff;
+$xanthous: #F9AE19ff;
+$tangerine: #F58600ff;
+$lavender-blush: #F9EDEDff;
+$orange-peel: #FD9A00ff;
+
+/* SCSS HSL */
+$licorice: hsla(0, 100%, 2%, 1);
+$xanthous: hsla(40, 95%, 54%, 1);
+$tangerine: hsla(33, 100%, 48%, 1);
+$lavender-blush: hsla(0, 50%, 95%, 1);
+$orange-peel: hsla(37, 100%, 50%, 1);
+
+/* SCSS RGB */
+$licorice: rgba(12, 0, 0, 1);
+$xanthous: rgba(249, 174, 25, 1);
+$tangerine: rgba(245, 134, 0, 1);
+$lavender-blush: rgba(249, 237, 237, 1);
+$orange-peel: rgba(253, 154, 0, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0C0000ff, #F9AE19ff, #F58600ff, #F9EDEDff, #FD9A00ff);
+$gradient-right: linear-gradient(90deg, #0C0000ff, #F9AE19ff, #F58600ff, #F9EDEDff, #FD9A00ff);
+$gradient-bottom: linear-gradient(180deg, #0C0000ff, #F9AE19ff, #F58600ff, #F9EDEDff, #FD9A00ff);
+$gradient-left: linear-gradient(270deg, #0C0000ff, #F9AE19ff, #F58600ff, #F9EDEDff, #FD9A00ff);
+$gradient-top-right: linear-gradient(45deg, #0C0000ff, #F9AE19ff, #F58600ff, #F9EDEDff, #FD9A00ff);
+$gradient-bottom-right: linear-gradient(135deg, #0C0000ff, #F9AE19ff, #F58600ff, #F9EDEDff, #FD9A00ff);
+$gradient-top-left: linear-gradient(225deg, #0C0000ff, #F9AE19ff, #F58600ff, #F9EDEDff, #FD9A00ff);
+$gradient-bottom-left: linear-gradient(315deg, #0C0000ff, #F9AE19ff, #F58600ff, #F9EDEDff, #FD9A00ff);
+$gradient-radial: radial-gradient(#0C0000ff, #F9AE19ff, #F58600ff, #F9EDEDff, #FD9A00ff);

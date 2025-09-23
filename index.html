@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iLocksmith IN - Professional Locksmith Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <script>
+    // Tailwind config for custom brand colors and Poppins font
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#FD9A00',
+              'orange-light': 'rgba(253, 154, 0, 0.1)',
+              'orange-hover': 'rgba(245, 134, 0, 1)',
+              dark: '#0C0000',
+              crimson: '#DC143C',
+              'orange-fire': '#FF4500'
+            }
+          },
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+            'slide-down': 'slideDown 0.3s ease-out',
+            'bounce-subtle': 'bounceSubtle 2s infinite',
+            'glow': 'glow 2s ease-in-out infinite alternate',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            slideDown: {
+              '0%': { opacity: '0', transform: 'translateY(-10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            bounceSubtle: {
+              '0%, 20%, 50%, 80%, 100%': { transform: 'translateY(0)' },
+              '40%': { transform: 'translateY(-5px)' },
+              '60%': { transform: 'translateY(-3px)' }
+            },
+            glow: {
+              '0%': { boxShadow: '0 0 20px rgba(253, 154, 0, 0.3)' },
+              '100%': { boxShadow: '0 0 30px rgba(253, 154, 0, 0.6)' }
+            }
+          }
+        },
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 font-poppins">
+
+  <!-- Enhanced Navbar -->
+  <nav class="bg-white shadow-xl fixed top-0 w-full z-50 border-b-2 border-brand-orange/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <!-- Enhanced Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="flex items-center space-x-3 group">
+            <div class="w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+              <span class="material-icons text-white text-2xl">lock</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-2xl font-black text-gray-800 group-hover:text-brand-orange transition-colors duration-300">iLocksmith</span>
+              <span class="text-xs font-medium text-brand-orange uppercase tracking-wider">Indiana</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Enhanced Desktop Menu -->
+        <div class="hidden lg:flex space-x-8 items-center">
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-brand-orange font-semibold flex items-center py-2 px-3 rounded-lg hover:bg-brand-orange-light transition-all duration-300">
+              Services
+              <svg class="ml-2 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.25 8.27a.75.75 0 01-.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <!-- Enhanced Dropdown Menu -->
+            <div class="absolute left-0 mt-2 w-64 bg-white border border-brand-orange/20 rounded-xl shadow-2xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 animate-slide-down">
+              <div class="py-2">
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange transition-all duration-200">
+                  <span class="material-icons text-brand-orange mr-3">car_repair</span>
+                  Automotive Locksmith
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange transition-all duration-200">
+                  <span class="material-icons text-brand-orange mr-3">home</span>
+                  Residential Services
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange transition-all duration-200">
+                  <span class="material-icons text-brand-orange mr-3">business</span>
+                  Commercial Services
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Areas Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-brand-orange font-semibold flex items-center py-2 px-3 rounded-lg hover:bg-brand-orange-light transition-all duration-300">
+              Service Areas
+              <svg class="ml-2 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.25 8.27a.75.75 0 01-.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <!-- Enhanced Dropdown Menu -->
+            <div class="absolute left-0 mt-2 w-56 bg-white border border-brand-orange/20 rounded-xl shadow-2xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
+              <div class="py-2">
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange transition-all duration-200">
+                  <span class="material-icons text-brand-orange mr-3">place</span>
+                  South Bend
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange transition-all duration-200">
+                  <span class="material-icons text-brand-orange mr-3">place</span>
+                  Mishawaka
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange transition-all duration-200">
+                  <span class="material-icons text-brand-orange mr-3">place</span>
+                  Elkhart
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other enhanced nav links -->
+          <a href="#faqs" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-3 rounded-lg hover:bg-brand-orange-light transition-all duration-300">FAQs</a>
+          <a href="#reviews" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-3 rounded-lg hover:bg-brand-orange-light transition-all duration-300">Reviews</a>
+          <a href="#about" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-3 rounded-lg hover:bg-brand-orange-light transition-all duration-300">About</a>
+          <a href="#contact" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-3 rounded-lg hover:bg-brand-orange-light transition-all duration-300">Contact</a>
+
+          <!-- Enhanced Call & Book Buttons -->
+          <div class="flex items-center space-x-3 ml-4">
+            <a href="tel:+5743187797" class="flex items-center space-x-2 bg-gradient-to-r from-brand-orange to-brand-orange-hover text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 animate-glow">
+              <span class="material-icons">call</span>
+              <span>Call Now</span>
+            </a>
+            <a href="#book" class="flex items-center space-x-2 border-2 border-brand-orange text-brand-orange px-6 py-3 rounded-xl font-semibold hover:bg-brand-orange hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300">
+              <span class="material-icons">schedule</span>
+              <span>Book</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Enhanced Mobile Menu Button -->
+        <div class="lg:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-700 hover:text-brand-orange focus:outline-none p-2 rounded-lg hover:bg-brand-orange-light transition-colors duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enhanced Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-brand-orange/20 shadow-xl">
+      <div class="px-4 py-4 space-y-2">
+        <a href="#" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+          <span class="material-icons text-brand-orange mr-3">build</span>
+          Services
+        </a>
+        <a href="#" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+          <span class="material-icons text-brand-orange mr-3">place</span>
+          Service Areas
+        </a>
+        <a href="#faqs" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+          <span class="material-icons text-brand-orange mr-3">help</span>
+          FAQs
+        </a>
+        <a href="#reviews" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+          <span class="material-icons text-brand-orange mr-3">star</span>
+          Reviews
+        </a>
+        <a href="#about" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+          <span class="material-icons text-brand-orange mr-3">info</span>
+          About
+        </a>
+        <a href="#contact" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+          <span class="material-icons text-brand-orange mr-3">call</span>
+          Contact
+        </a>
+        
+        <!-- Mobile CTA Buttons -->
+        <div class="pt-4 space-y-3">
+          <a href="tel:+5743187797" class="flex items-center justify-center space-x-2 bg-gradient-to-r from-brand-orange to-brand-orange-hover text-white py-3 rounded-xl font-semibold shadow-lg">
+            <span class="material-icons">call</span>
+            <span>Call (574) 318-7797</span>
+          </a>
+          <a href="#book" class="flex items-center justify-center space-x-2 border-2 border-brand-orange text-brand-orange py-3 rounded-xl font-semibold">
+            <span class="material-icons">schedule</span>
+            <span>Book Service</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer to prevent content being hidden under navbar -->
+  <div class="h-20"></div>
+
+  <!-- Enhanced Hero Section with Booking -->
+  <section class="relative bg-cover bg-center text-white pt-16 md:pt-20 pb-20 flex flex-col md:flex-row justify-center items-center gap-12 md:gap-16 min-h-screen" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+
+    <!-- Enhanced Dark Overlay with Gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-black/80 via-black/70 to-brand-dark/60"></div>
+
+    <div class="relative z-10 max-w-7xl w-full flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12 gap-12">
+        
+      <!-- Left Side: Enhanced Text + Badges -->
+      <div class="flex-1 flex flex-col justify-center space-y-8 max-w-2xl text-center lg:text-left animate-fade-in">
+        <!-- Enhanced Headline -->
+        <h1 class="font-black text-4xl sm:text-5xl lg:text-6xl leading-tight">
+          <span class="bg-gradient-to-r from-brand-crimson via-brand-orange to-brand-orange-hover bg-clip-text text-transparent animate-glow">
+            Professional
+          </span>
+          <br>
+          <span class="text-white">Locksmith Services</span>
+          <br>
+          <span class="text-brand-orange font-bold">in South Bend, IN</span>
+        </h1>
+
+        <!-- Enhanced Subtext -->
+        <div class="flex justify-center lg:justify-start">
+          <div class="inline-flex items-center gap-3 bg-white/10 border-2 border-brand-orange/50 rounded-2xl px-6 py-4 text-base shadow-2xl backdrop-blur-lg">
+            <div class="w-8 h-8 bg-gradient-to-r from-brand-orange to-brand-orange-hover rounded-full flex items-center justify-center animate-bounce-subtle">
+              <span class="material-icons text-white text-lg">support_agent</span>
+            </div>
+            <span class="text-white font-semibold">24/7 Emergency Mobile Service • Licensed & Insured</span>
+          </div>
+        </div>
+
+        <!-- Enhanced CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mx-auto lg:mx-0">
+          <!-- Enhanced Call Button -->
+          <a href="tel:+5743187797" 
+             class="group flex items-center justify-center gap-3 bg-gradient-to-r from-brand-orange to-brand-orange-hover hover:from-brand-orange-hover hover:to-brand-crimson transition-all duration-500 rounded-2xl px-8 py-4 font-bold text-white text-lg transform hover:scale-110 shadow-2xl hover:shadow-brand-orange/50 min-w-[250px] animate-glow">
+            <span class="material-icons text-xl group-hover:animate-bounce">call</span>
+            <span>Call (574) 318-7797</span>
+          </a>
+
+          <!-- Enhanced Services Button -->
+          <a href="#services" 
+             class="group flex items-center justify-center gap-3 border-2 border-brand-orange rounded-2xl px-8 py-4 font-bold text-white text-lg hover:bg-gradient-to-r hover:from-brand-orange hover:to-brand-orange-hover hover:border-transparent transition-all duration-500 transform hover:scale-110 shadow-2xl backdrop-blur-sm min-w-[250px]">
+            <span>Our Services</span>
+            <span class="material-icons text-xl transform transition-transform duration-500 group-hover:translate-x-2">
+              arrow_forward
+            </span>
+          </a>
+        </div>
+
+        <!-- Enhanced Trust Badges -->
+        <div class="flex flex-wrap justify-center lg:justify-start gap-6 mt-8">
+          <!-- Licensed Badge -->
+          <div class="group trust-badge bg-white/10 p-6 rounded-3xl text-white backdrop-blur-lg flex flex-col items-center w-28 shadow-2xl border border-white/20 hover:scale-110 hover:shadow-brand-orange/30 transition-all duration-500 cursor-pointer">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-crimson to-brand-orange flex items-center justify-center shadow-xl mb-3 group-hover:rotate-12 transition-transform duration-500">
+              <span class="material-icons text-white text-2xl">verified</span>
+            </div>
+            <p class="text-xs font-bold uppercase tracking-wider">Licensed</p>
+          </div>
+          
+          <!-- Insured Badge -->
+          <div class="group trust-badge bg-white/10 p-6 rounded-3xl text-white backdrop-blur-lg flex flex-col items-center w-28 shadow-2xl border border-white/20 hover:scale-110 hover:shadow-brand-orange/30 transition-all duration-500 cursor-pointer">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-crimson to-brand-orange flex items-center justify-center shadow-xl mb-3 group-hover:rotate-12 transition-transform duration-500">
+              <span class="material-icons text-white text-2xl">shield</span>
+            </div>
+            <p class="text-xs font-bold uppercase tracking-wider">Insured</p>
+          </div>
+          
+          <!-- Certified Badge -->
+          <div class="group trust-badge bg-white/10 p-6 rounded-3xl text-white backdrop-blur-lg flex flex-col items-center w-28 shadow-2xl border border-white/20 hover:scale-110 hover:shadow-brand-orange/30 transition-all duration-500 cursor-pointer">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-crimson to-brand-orange flex items-center justify-center shadow-xl mb-3 group-hover:rotate-12 transition-transform duration-500">
+              <span class="material-icons text-white text-2xl">star</span>
+            </div>
+            <p class="text-xs font-bold uppercase tracking-wider">5-Star</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enhanced Booking Form -->
+      <div class="flex-1 relative z-10 bg-gradient-to-br from-white via-gray-50 to-white rounded-3xl shadow-2xl p-10 text-gray-800 w-full max-w-lg mt-12 lg:mt-0 border-2 border-brand-orange/20 animate-fade-in hover:shadow-brand-orange/20 transition-shadow duration-500">
+        
+        <!-- Enhanced Form Heading -->
+        <div class="text-center mb-8">
+          <h3 class="text-3xl font-black mb-3">
+            Book a <span class="bg-gradient-to-r from-brand-crimson to-brand-orange bg-clip-text text-transparent">Locksmith</span> Now
+          </h3>
+          <p class="text-gray-600 font-medium">Get instant response within 15 minutes</p>
+        </div>
+        
+        <!-- Enhanced Form -->
+        <form id="booking-form" class="space-y-6" novalidate>
+          
+          <!-- Name & Phone Row -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="relative group">
+              <input type="text" id="name" name="name" placeholder=" " required
+                     class="peer w-full border-2 border-gray-200 rounded-xl p-4 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-brand-orange focus:border-brand-orange focus:outline-none transition-all duration-300 placeholder-transparent group-hover:border-brand-orange/50">
+              <label for="name" class="absolute left-4 top-4 text-gray-500 text-sm transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-10px] peer-focus:text-xs peer-focus:text-brand-orange bg-white px-2 font-medium">
+                Your Name *
+              </label>
+            </div>
+            <div class="relative group">
+              <input type="tel" id="phone" name="phone" placeholder=" " required
+                     class="peer w-full border-2 border-gray-200 rounded-xl p-4 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-brand-orange focus:border-brand-orange focus:outline-none transition-all duration-300 placeholder-transparent group-hover:border-brand-orange/50">
+              <label for="phone" class="absolute left-4 top-4 text-gray-500 text-sm transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-10px] peer-focus:text-xs peer-focus:text-brand-orange bg-white px-2 font-medium">
+                Phone Number *
+              </label>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="relative group">
+            <input type="text" id="address" name="address" placeholder=" " required
+                   class="peer w-full border-2 border-gray-200 rounded-xl p-4 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-brand-orange focus:border-brand-orange focus:outline-none transition-all duration-300 placeholder-transparent group-hover:border-brand-orange/50">
+            <label for="address" class="absolute left-4 top-4 text-gray-500 text-sm transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-10px] peer-focus:text-xs peer-focus:text-brand-orange bg-white px-2 font-medium">
+              Service Address *
+            </label>
+          </div>
+
+          <!-- Service Type & When Needed -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="relative group">
+              <select id="service_type" name="service_type" required
+                      class="peer w-full border-2 border-gray-200 rounded-xl p-4 text-sm shadow-sm bg-white focus:ring-2 focus:ring-brand-orange focus:border-brand-orange focus:outline-none transition-all duration-300 group-hover:border-brand-orange/50">
+                <option value="" disabled selected>Select Service Type</option>
+                <option>Car Lockout</option>
+                <option>House Lockout</option>
+                <option>Business Lockout</option>
+                <option>Lock Replacement</option>
+                <option>Lock Rekey</option>
+                <option>Key Duplication</option>
+                <option>Emergency Service</option>
+              </select>
+              <label for="service_type" class="block mt-1 text-xs text-gray-500 font-medium">Service Type *</label>
+            </div>
+            <div class="relative group">
+              <select id="needed" name="needed" required
+                      class="peer w-full border-2 border-gray-200 rounded-xl p-4 text-sm shadow-sm bg-white focus:ring-2 focus:ring-brand-orange focus:border-brand-orange focus:outline-none transition-all duration-300 group-hover:border-brand-orange/50">
+                <option value="" disabled selected>When do you need service?</option>
+                <option>ASAP - Emergency</option>
+                <option>Within 2 hours</option>
+                <option>Same Day</option>
+                <option>Tomorrow</option>
+                <option>This Week</option>
+              </select>
+              <label for="needed" class="block mt-1 text-xs text-gray-500 font-medium">When Needed? *</label>
+            </div>
+          </div>
+
+          <!-- Additional Notes -->
+          <div class="relative group">
+            <textarea id="notes" name="notes" rows="3" placeholder=" " 
+                      class="peer w-full border-2 border-gray-200 rounded-xl p-4 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-brand-orange focus:border-brand-orange focus:outline-none transition-all duration-300 placeholder-transparent resize-none group-hover:border-brand-orange/50"></textarea>
+            <label for="notes" class="absolute left-4 top-4 text-gray-500 text-sm transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-10px] peer-focus:text-xs peer-focus:text-brand-orange bg-white px-2 font-medium">
+              Additional Notes (Optional)
+            </label>
+          </div>
+
+          <!-- Enhanced Submit Button -->
+          <button type="submit" 
+                  class="group w-full py-5 bg-gradient-to-r from-brand-orange to-brand-orange-hover hover:from-brand-orange-hover hover:to-brand-crimson text-white font-bold rounded-xl shadow-xl hover:shadow-2xl hover:shadow-brand-orange/30 hover:scale-[1.02] transition-all duration-500 flex items-center justify-center gap-3 text-lg tracking-wide animate-glow">
+            <span class="material-icons text-2xl group-hover:animate-bounce">send</span>
+            <span>Request Service Now</span>
+          </button>
+
+          <!-- Trust Message -->
+          <div class="text-center mt-4">
+            <p class="text-xs text-gray-500 flex items-center justify-center gap-2">
+              <span class="material-icons text-green-500 text-sm">verified</span>
+              100% Secure & Confidential - We'll respond within 15 minutes
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Footer -->
+  <footer class="text-gray-300 pt-20 pb-10 px-6 md:px-12 border-t-4 border-brand-orange relative overflow-hidden" 
+          style="background: linear-gradient(135deg, #0C0000 0%, rgba(245, 134, 0, 1) 100%);">
+    
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-10 left-10 w-20 h-20 border-2 border-brand-orange rounded-full"></div>
+      <div class="absolute top-32 right-20 w-32 h-32 border border-brand-orange rounded-full"></div>
+      <div class="absolute bottom-20 left-1/4 w-16 h-16 border-2 border-brand-orange rounded-full"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-sm">
+        
+      <!-- Enhanced Contact Us -->
+      <div class="space-y-6">
+        <h4 class="text-white font-black text-xl mb-6 relative">
+          <span class="bg-gradient-to-r from-brand-orange to-brand-orange-hover bg-clip-text text-transparent">Contact Us</span>
+          <div class="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-brand-orange to-brand-orange-hover rounded-full"></div>
+        </h4>
+        <ul class="space-y-4">
+          <li class="flex items-center group hover:translate-x-2 transition-transform duration-300">
+            <div class="w-10 h-10 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-lg flex items-center justify-center mr-4 shadow-lg group-hover:shadow-brand-orange/30">
+              <span class="material-icons text-white text-lg">call</span>
+            </div>
+            <div>
+              <p class="font-bold text-white text-lg">574-318-7797</p>
+              <p class="text-xs text-gray-400">Available 24/7</p>
+            </div>
+          </li>
+          <li class="flex items-center group hover:translate-x-2 transition-transform duration-300">
+            <div class="w-10 h-10 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-lg flex items-center justify-center mr-4 shadow-lg group-hover:shadow-brand-orange/30">
+              <span class="material-icons text-white text-lg">email</span>
+            </div>
+            <div>
+              <p class="font-semibold text-white">ilocksmithoffice@gmail.com</p>
+              <p class="text-xs text-gray-400">Quick response guaranteed</p>
+            </div>
+          </li>
+          <li class="flex items-start group hover:translate-x-2 transition-transform duration-300">
+            <div class="w-10 h-10 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-lg flex items-center justify-center mr-4 shadow-lg group-hover:shadow-brand-orange/30 flex-shrink-0 mt-1">
+              <span class="material-icons text-white text-lg">place</span>
+            </div>
+            <div>
+              <p class="font-semibold text-white">219 N Dixie Way Ste 209</p>
+              <p class="text-gray-300">South Bend, IN 46637</p>
+              <p class="text-xs text-gray-400">Mobile service available</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Enhanced Quick Links -->
+      <div class="space-y-6">
+        <h4 class="text-white font-black text-xl mb-6 relative">
+          <span class="bg-gradient-to-r from-brand-orange to-brand-orange-hover bg-clip-text text-transparent">Quick Links</span>
+          <div class="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-brand-orange to-brand-orange-hover rounded-full"></div>
+        </h4>
+        <ul class="space-y-3">
+          <li><a href="services.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+            <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">build</span> 
+            <span class="font-medium">Our Services</span>
+          </a></li>
+          <li><a href="service-areas.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+            <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">map</span> 
+            <span class="font-medium">Service Areas</span>
+          </a></li>
+          <li><a href="faq.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+            <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">help</span> 
+            <span class="font-medium">FAQ</span>
+          </a></li>
+          <li><a href="reviews.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+            <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">star</span> 
+            <span class="font-medium">Customer Reviews</span>
+          </a></li>
+          <li><a href="about.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+            <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">info</span> 
+            <span class="font-medium">About Us</span>
+          </a></li>
+          <li><a href="blog.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+            <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">article</span> 
+            <span class="font-medium">Blog & Tips</span>
+          </a></li>
+        </ul>
+      </div>
+
+      <!-- Enhanced Business Hours -->
+      <div class="space-y-6">
+        <h4 class="text-white font-black text-xl mb-6 relative">
+          <span class="bg-gradient-to-r from-brand-orange to-brand-orange-hover bg-clip-text text-transparent">Business Hours</span>
+          <div class="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-brand-orange to-brand-orange-hover rounded-full"></div>
+        </h4>
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-brand-orange/20">
+          <ul class="space-y-3">
+            <li class="flex items-center justify-between group">
+              <span class="flex items-center">
+                <span class="material-icons text-brand-orange text-sm mr-2">schedule</span>
+                <strong class="text-white">Sunday:</strong>
+              </span>
+              <span class="text-gray-300 font-medium">7:00 AM - 10:00 PM</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center">
+                <span class="material-icons text-brand-orange text-sm mr-2">schedule</span>
+                <strong class="text-white">Monday:</strong>
+              </span>
+              <span class="text-gray-300 font-medium">7:00 AM - 10:00 PM</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center">
+                <span class="material-icons text-brand-orange text-sm mr-2">schedule</span>
+                <strong class="text-white">Tuesday:</strong>
+              </span>
+              <span class="text-gray-300 font-medium">7:00 AM - 10:00 PM</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center">
+                <span class="material-icons text-brand-orange text-sm mr-2">schedule</span>
+                <strong class="text-white">Wednesday:</strong>
+              </span>
+              <span class="text-gray-300 font-medium">7:00 AM - 10:00 PM</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center">
+                <span class="material-icons text-brand-orange text-sm mr-2">schedule</span>
+                <strong class="text-white">Thursday:</strong>
+              </span>
+              <span class="text-gray-300 font-medium">7:00 AM - 10:00 PM</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center">
+                <span class="material-icons text-brand-orange text-sm mr-2">schedule</span>
+                <strong class="text-white">Friday:</strong>
+              </span>
+              <span class="text-gray-300 font-medium">6:30 AM - 5:30 PM</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center">
+                <span class="material-icons text-gray-500 text-sm mr-2">schedule</span>
+                <strong class="text-gray-400">Saturday:</strong>
+              </span>
+              <span class="text-gray-500 font-medium">Closed</span>
+            </li>
+          </ul>
+          <div class="mt-4 p-3 bg-gradient-to-r from-brand-orange/20 to-brand-orange-hover/20 rounded-lg border border-brand-orange/30">
+            <p class="text-brand-orange font-bold text-sm flex items-center">
+              <span class="material-icons mr-2 text-lg">emergency</span>
+              24/7 Emergency Service Available
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enhanced Trust & Social -->
+      <div class="space-y-6">
+        <h4 class="text-white font-black text-xl mb-6 relative">
+          <span class="bg-gradient-to-r from-brand-orange to-brand-orange-hover bg-clip-text text-transparent">Why Choose Us</span>
+          <div class="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-brand-orange to-brand-orange-hover rounded-full"></div>
+        </h4>
+        
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-center group hover:translate-x-2 transition-transform duration-300">
+            <div class="w-8 h-8 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-lg flex items-center justify-center mr-3 shadow-lg group-hover:shadow-brand-orange/30">
+              <span class="material-icons text-white text-sm">verified</span>
+            </div>
+            <span class="font-semibold text-white">Bonded & Insured</span>
+          </li>
+          <li class="flex items-center group hover:translate-x-2 transition-transform duration-300">
+            <div class="w-8 h-8 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-lg flex items-center justify-center mr-3 shadow-lg group-hover:shadow-brand-orange/30">
+              <span class="material-icons text-white text-sm">workspace_premium</span>
+            </div>
+            <span class="font-semibold text-white">ALOA Certified</span>
+          </li>
+          <li class="flex items-center group hover:translate-x-2 transition-transform duration-300">
+            <div class="w-8 h-8 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-lg flex items-center justify-center mr-3 shadow-lg group-hover:shadow-brand-orange/30">
+              <span class="material-icons text-white text-sm">star</span>
+            </div>
+            <span class="font-semibold text-white">5-Star Rated Service</span>
+          </li>
+          <li class="flex items-center group hover:translate-x-2 transition-transform duration-300">
+            <div class="w-8 h-8 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-lg flex items-center justify-center mr-3 shadow-lg group-hover:shadow-brand-orange/30">
+              <span class="material-icons text-white text-sm">speed</span>
+            </div>
+            <span class="font-semibold text-white">30-Min Response Time</span>
+          </li>
+        </ul>
+
+        <!-- Enhanced Social Links -->
+        <div>
+          <h5 class="text-white font-bold text-lg mb-4">Follow Us</h5>
+          <div class="flex space-x-4">
+            <a href="https://www.tiktok.com/@ilocksmithin" target="_blank" 
+               class="group w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-brand-orange/30 hover:scale-110 transition-all duration-300">
+              <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+              </svg>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61580039665160" target="_blank"
+               class="group w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-brand-orange/30 hover:scale-110 transition-all duration-300">
+              <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/ilocksmithin" target="_blank"
+               class="group w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-brand-orange/30 hover:scale-110 transition-all duration-300">
+              <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+
+            <a href="https://x.com/ilocksmithin" target="_blank"
+               class="group w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-brand-orange/30 hover:scale-110 transition-all duration-300">
+              <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+              </svg>
+            </a>
+
+            <a href="https://www.youtube.com/@iLocksmithIN" target="_blank"
+               class="group w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-brand-orange/30 hover:scale-110 transition-all duration-300">
+              <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enhanced Bottom Bar -->
+    <div class="relative z-10 mt-16 pt-8 border-t-2 border-brand-orange/30">
+      <div class="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto px-6 gap-6">
+        
+        <!-- Copyright & Made By -->
+        <div class="flex flex-col lg:flex-row items-center gap-4 text-center lg:text-left">
+          <p class="text-gray-300 font-medium">© 2025 iLocksmithIN. All rights reserved.</p>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400">Made with</span>
+            <span class="text-red-500 animate-bounce text-xl">❤️</span>
+            <span class="text-gray-400">by</span>
+            <a href="https://gettmarketing.com/" target="_blank" 
+               class="bg-gradient-to-r from-brand-orange to-brand-orange-hover bg-clip-text text-transparent font-bold hover:scale-110 transition-transform duration-300">
+              Gett Marketing
+            </a>
+          </div>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="flex flex-wrap items-center justify-center lg:justify-end gap-6 text-sm">
+          <a href="privacy-policy.html" class="text-gray-300 hover:text-brand-orange font-medium transition-colors duration-300 hover:scale-110">Privacy Policy</a>
+          <a href="terms-and-conditions.html" class="text-gray-300 hover:text-brand-orange font-medium transition-colors duration-300 hover:scale-110">Terms & Conditions</a>
+          <a href="accessibility-policy.html" class="text-gray-300 hover:text-brand-orange font-medium transition-colors duration-300 hover:scale-110">Accessibility</a>
+        </div>
+      </div>
+
+      <!-- Emergency Call Button - Floating -->
+      <div class="fixed bottom-6 right-6 z-50 lg:hidden">
+        <a href="tel:+5743187797" 
+           class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-brand-orange to-brand-orange-hover text-white rounded-full shadow-2xl hover:shadow-brand-orange/50 animate-bounce-subtle">
+          <span class="material-icons text-2xl">call</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enhanced Mobile Menu Script with Smooth Animations -->
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      
+      // Add smooth slide animation
+      if (!menu.classList.contains('hidden')) {
+        menu.style.maxHeight = '0px';
+        menu.style.overflow = 'hidden';
+        menu.style.transition = 'max-height 0.3s ease-out';
+        setTimeout(() => {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+        }, 10);
+      }
+    });
+
+    // Enhanced Form Submission with Validation
+    document.getElementById('booking-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form elements
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const address = document.getElementById('address').value.trim();
+      const serviceType = document.getElementById('service_type').value;
+      const needed = document.getElementById('needed').value;
+      
+      // Basic validation
+      if (!name || !phone || !address || !serviceType || !needed) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      
+      // Phone validation (basic)
+      const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+      if (!phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''))) {
+        alert('Please enter a valid phone number.');
+        return;
+      }
+      
+      // Success feedback
+      const submitBtn = e.target.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      
+      submitBtn.innerHTML = `
+        <span class="material-icons animate-spin">sync</span>
+        <span>Sending Request...</span>
+      `;
+      submitBtn.disabled = true;
+      
+      // Simulate form submission (replace with actual form handler)
+      setTimeout(() => {
+        submitBtn.innerHTML = `
+          <span class="material-icons">check_circle</span>
+          <span>Request Sent!</span>
+        `;
+        submitBtn.classList.add('from-green-500', 'to-green-600');
+        submitBtn.classList.remove('from-brand-orange', 'to-brand-orange-hover');
+        
+        // Reset form
+        setTimeout(() => {
+          this.reset();
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('from-green-500', 'to-green-600');
+          submitBtn.classList.add('from-brand-orange', 'to-brand-orange-hover');
+        }, 3000);
+      }, 2000);
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-2xl');
+        navbar.style.backdropFilter = 'blur(20px)';
+        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+      } else {
+        navbar.classList.remove('shadow-2xl');
+        navbar.style.backdropFilter = 'none';
+        navbar.style.backgroundColor = 'white';
+      }
+    });
+
+    // Add loading animation to page
+    window.addEventListener('load', function() {
+      document.body.classList.add('animate-fade-in');
+    });
+  </script>
+
+</body>
+</html>
