@@ -188,62 +188,1037 @@
   <!-- Spacer to prevent content being hidden under navbar -->
   <div class="h-20"></div>
 
-  <!-- CTA Section - Animated & Vibrant -->
-<section class="relative bg-black text-[hsla(0,50%,95%,1)] py-20 overflow-hidden">
+  <!-- Page Header - Reviews Orange Style -->
+  <section class="relative bg-cover bg-center text-white min-h-screen flex items-center justify-center text-center px-6"
+        style="background-image: url('./images/reviews.webp');">
 
-  <div class="relative z-10 max-w-3xl mx-auto text-center px-6">
+    <!-- Dark overlay for readability -->
+    <div class="absolute inset-0 bg-black/70"></div>
 
-    <!-- Icon Circle with Glow -->
-    <div class="w-20 h-20 bg-[hsla(0,50%,95%,0.1)] backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg animate-pulse">
-      <span class="material-icons text-[hsla(33,100%,48%,1)] text-5xl animate-bounce-subtle">call</span>
+    <!-- Content Wrapper -->
+    <div class="relative z-10 max-w-3xl mx-auto space-y-6">
+        <!-- Breadcrumb -->
+        <nav class="text-sm mb-6 bg-transparent">
+            <ol class="flex items-center justify-center space-x-2 text-gray-400">
+                <li>
+                    <a href="/" class="hover:underline hover:text-[#FD9A00] transition">Home</a>
+                </li>
+                <li><span class="mx-1 text-gray-500">/</span></li>
+                <li class="text-gray-200">Reviews</li>
+            </ol>
+        </nav>
+
+        <!-- Header Content -->
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug">
+            What Our Clients Say
+            <span class="text-[#FD9A00] block mt-2">
+                Trusted Locksmith Service Feedback
+            </span>
+        </h1>
+
+        <p class="text-lg text-gray-100 leading-relaxed">
+            Hear directly from our satisfied customers. Discover why <strong>Key Kings Locksmith</strong> is trusted for fast, reliable, and professional locksmith services in Anderson for homes, businesses, and vehicles.
+        </p>
+    </div>
+  </section>
+
+
+  <!-- Customer Reviews Section -->
+  <section class="bg-[rgba(249,237,237,1)] py-20 px-4 sm:px-6">
+    <div class="container mx-auto text-center max-w-6xl">
+      
+      <!-- Header -->
+      <div class="mb-12">
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 
+                  bg-gradient-to-r from-brand-orange to-brand-crimson 
+                  bg-clip-text text-transparent">
+          What our Client Says
+        </h2>
+        <p class="text-brand-dark text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+          Don't just take our word — see what our customers say.
+        </p>
+      </div>
+
+      <!-- Reviews Grid -->
+      <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      
+      <!-- BEGIN 20 Review Cards -->
+      <!-- Card 1 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">PM</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Thomas P.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Port St. Lucie, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Left my keys in the trunk while shopping. They came right away and helped me get back into my car safely.
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange font-semibold text-sm">Car Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">AJ</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Robert K.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Fort Pierce, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced. Quick service and fair pricing. The new key works perfectly!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Car Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">MS</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Maria S.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Stuart, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">House Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">AR</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Amanda R.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Fort Pierce, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Locked my keys in the car at work. Their quick response saved my day. Very reliable service!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Business Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">MB</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Michael B.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Stuart, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Lock Replacement</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">JM</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Jennifer M.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Port St. Lucie, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Emergency Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">DL</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Daniel L.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Port St. Lucie, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Amazing service! My house lockout was resolved in minutes. Friendly and professional team.
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">House Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">KB</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Kevin B.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Palm Bay, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Quick and professional! Locked my car at the grocery store and they were there in 10 minutes. Highly recommend!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Car Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">LS</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Laura S.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Vero Beach, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Locked out of my house in the evening. They came promptly and were very courteous. Exceptional service!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">House Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">JC</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">James C.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Palm Coast, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Needed a quick key duplication for my office. Fast, professional, and reasonable price. Highly satisfied!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Key Duplication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">KS</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Karen S.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Melbourne, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Locked my office safe by accident. They opened it professionally with no damage. Very trustworthy service!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Business Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">RC</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Randy C.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Vero Beach, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Emergency lockout service at night. Arrived fast and solved the problem without any issues. Truly reliable!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Emergency Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">KT</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Kevin T.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Stuart, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Locked out of my office. The team responded quickly and got me back inside without damage. Highly recommend!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Business Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 bg-brand-orange text-white flex items-center justify-center mr-4 font-bold rounded-full">KT</div>
+              <div class="text-left">
+                <p class="font-bold text-lg text-[#1C1C1C]">Kevin T.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Stuart, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Locked out of my office. The team responded quickly and got me back inside without damage. Highly recommend!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+              <span class="material-icons text-brand-orange">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Business Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--HIDDEN CARDS -->
+      <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">AB</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Alice B.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Orlando, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Locked myself out of the car late at night. Quick and professional response. Highly recommend Key Kings!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Car Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">CD</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Chris D.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Tampa, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Needed emergency lockout service. They arrived faster than expected and solved the problem efficiently.
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Emergency Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 14 -->
+      <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">EF</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Emma F.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Jacksonville, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Car key replacement done quickly and professionally. Great customer service and fair pricing.
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Key Duplication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 15 -->
+      <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">GH</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">George H.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Miami, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Locked out at work. Response was super fast and professional. Problem solved with no damage.
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Car Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 16 -->
+      <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">IJ</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Isabel J.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Orlando, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Emergency lockout service was fast and reliable. Very friendly and professional staff.
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Emergency Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 17 -->
+      <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">KL</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Kyle L.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Tampa, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Professional and fast service for my house lockout. Really impressed with the speed and care.
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">House Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 18 -->
+      <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">MN</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Megan N.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Miami, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Quick car lockout service, arrived within 10 minutes. Extremely professional and friendly.
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Car Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 19 -->
+      <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">OP</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Oliver P.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Orlando, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Emergency house lockout service was handled smoothly. Very fast and professional team.
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">House Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 20 -->
+      <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">QR</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Quinn R.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Tampa, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Car key duplication was fast and accurate. Staff was friendly and knowledgeable.
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Key Duplication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 21 -->
+      <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">ST</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Sarah T.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Fort Pierce, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Emergency service for business lockout was extremely fast. They saved the day!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Business Lockout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 22 -->
+      <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-brand-orange to-brand-crimson flex">
+        <div class="bg-[#F5F5F5] p-6 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="avatar w-14 h-14 rounded-full bg-brand-orange flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">UV</div>
+              <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Uma V.</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                  <span class="material-icons text-sm mr-2 text-brand-orange">location_on</span>
+                  Stuart, FL
+                </p>
+              </div>
+            </div>
+            <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+              Quick and professional lock replacement service. Highly recommend Key Kings Locksmith!
+            </p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-1">
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+              <span class="material-icons text-brand-orange text-lg">star</span>
+            </div>
+            <div class="service-tag bg-brand-orange-light px-4 py-2 rounded-full">
+              <span class="text-brand-orange text-sm font-semibold">Lock Replacement</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Heading with Gradient Text -->
-    <h2 class="text-3xl md:text-5xl font-extrabold mb-4 leading-snug bg-gradient-to-r from-[hsla(33,100%,48%,1)] to-[hsla(37,100%,50%,1)] bg-clip-text text-transparent animate-fade-in">
-      Need Professional Locksmith Help Now?
-    </h2>
+          <!-- Read More / Show Less Button -->
+      <div class="text-center mt-8">
+        <button id="toggle-reviews" 
+                class="inline-flex items-center justify-center gap-3 px-8 py-4 font-bold text-lg bg-gradient-to-r from-brand-orange to-brand-orange-hover rounded-2xl shadow-2xl hover:from-brand-orange-hover hover:to-brand-orange transform hover:scale-105 transition-all duration-300 text-white">
+          <span class="material-icons text-2xl">expand_more</span>
+          <span>Read More</span>
+          <span class="material-icons text-lg">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+  </section>
 
-    <!-- Subtext -->
-    <p class="text-base md:text-lg mb-10 opacity-90 leading-relaxed animate-slide-down">
-      Don’t wait until it’s too late! Protect your home, office, and family today. Our certified locksmiths provide fast, reliable, and secure service you can trust.
+<!-- Customer Reviews Section -->
+<section class="relative bg-[rgba(249,237,237,1)] py-20 px-6 md:px-12">
+  <div class="max-w-6xl mx-auto text-center">
+    <!-- Section Header -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-[#FD9A00] mb-4">
+      Customer Reviews
+    </h2>
+    <p class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto mb-12">
+      Share your experience or see why our clients trust Key Kings Locksmith.
     </p>
 
-    <!-- Action Buttons -->
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-10">
-      <!-- Call Button with Gradient & Glow -->
-      <a href="tel:8649009597"
-         class="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[hsla(33,100%,48%,1)] to-[hsla(37,100%,50%,1)] text-[hsla(0,50%,95%,1)] font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-glow">
-        <span class="material-icons text-[hsla(0,50%,95%,1)] text-xl animate-bounce-subtle">call</span>
-        <span>Call (864) 900-9597</span>
-      </a>
-      <!-- Book Service Button -->
-      <a href="book-service.html"
-         class="flex items-center gap-3 px-8 py-4 border-2 border-[hsla(0,50%,95%,1)] bg-transparent text-[hsla(0,50%,95%,1)] font-bold rounded-xl hover:bg-[hsla(40,95%,54%,1)] hover:text-[hsla(0,100%,2%,1)] hover:scale-105 transition-all duration-300 animate-fade-in">
-        <span class="material-icons text-lg">calendar_month</span>
-        <span>Book Service</span>
-      </a>
-    </div>
+    <div class="md:flex md:gap-12 flex-col items-center">
+      
+      <!-- Left Side: Review Form -->
+      <div class="md:w-1/2 bg-white rounded-2xl shadow-xl p-6 md:p-10 border-2 border-[#FD9A00] mb-8 md:mb-0">
+        <h3 class="text-2xl font-black mb-4">Leave a Review</h3>
+        <form id="review-form" class="space-y-4" novalidate>
+          <input type="text" placeholder="Your Name *" class="p-3 border-2 border-gray-200 rounded-xl w-full focus:ring-2 focus:ring-[#FD9A00]" required>
+          <input type="email" placeholder="Your Email *" class="p-3 border-2 border-gray-200 rounded-xl w-full focus:ring-2 focus:ring-[#FD9A00]" required>
+          <select class="p-3 border-2 border-gray-200 rounded-xl w-full focus:ring-2 focus:ring-[#FD9A00]" required>
+            <option disabled selected>Rating *</option>
+            <option>5 - Excellent</option>
+            <option>4 - Good</option>
+            <option>3 - Average</option>
+            <option>2 - Poor</option>
+            <option>1 - Terrible</option>
+          </select>
+          <textarea placeholder="Your Review *" class="p-3 border-2 border-gray-200 rounded-xl w-full focus:ring-2 focus:ring-[#FD9A00] resize-none" rows="4" required></textarea>
 
-    <!-- Features with slight hover effect -->
-    <div class="flex flex-wrap justify-center gap-8 text-[hsla(0,50%,95%,0.9)] text-base md:text-lg">
-      <div class="flex items-center gap-2 hover:scale-105 transition-transform duration-300">
-        <span class="material-icons text-[hsla(33,100%,48%,1)] text-lg animate-bounce-subtle">schedule</span>
-        <span>24/7 Emergency Service</span>
+          <!-- reCAPTCHA Placeholder -->
+          <div class="my-4 flex justify-center">
+            <div id="review-recaptcha" class="w-full md:w-3/4 bg-gray-100 border-2 border-gray-300 rounded-lg p-4 text-center text-gray-500">
+              <!-- reCAPTCHA goes here -->
+              reCAPTCHA goes here
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#FD9A00] to-[#F9AE19] text-white font-bold rounded-xl shadow-lg hover:scale-[1.02] transition-all duration-500 flex items-center justify-center gap-2">
+            <span class="material-icons">send</span>
+            Submit Review
+          </button>
+        </form>
       </div>
-      <div class="flex items-center gap-2 hover:scale-105 transition-transform duration-300">
-        <span class="material-icons text-[hsla(37,100%,50%,1)] text-lg animate-bounce-subtle">verified</span>
-        <span>Licensed & Insured</span>
-      </div>
-      <div class="flex items-center gap-2 hover:scale-105 transition-transform duration-300">
-        <span class="material-icons text-[hsla(33,100%,48%,1)] text-lg animate-bounce-subtle">star</span>
-        <span>5-Star Rated & Trusted</span>
+
+      <!-- Right Side: Trust Signals -->
+      <div class="md:w-1/2 flex flex-col items-center bg-white rounded-2xl shadow-xl p-6 md:p-10 border-2 border-[#FD9A00]">
+        <h3 class="text-2xl font-black mb-4">Trusted By Clients</h3>
+
+        <!-- Aggregate Rating -->
+        <div class="flex items-center mb-6 gap-3">
+          <span class="text-5xl font-extrabold text-[#FD9A00]">4.9</span>
+          <span class="flex items-center gap-1 text-gray-700">
+            <span class="material-icons text-yellow-400">star</span>
+            <span class="material-icons text-yellow-400">star</span>
+            <span class="material-icons text-yellow-400">star</span>
+            <span class="material-icons text-yellow-400">star</span>
+            <span class="material-icons text-yellow-400">star_half</span>
+          </span>
+        </div>
+
+        <!-- Platform Badges -->
+        <div class="flex items-center gap-6">
+          <img src="./images/google-badge.png" alt="Google Reviews" class="h-12">
+          <img src="./images/yelp-badge.png" alt="Yelp Reviews" class="h-12">
+          <img src="./images/facebook-badge.png" alt="Facebook Reviews" class="h-12">
+        </div>
       </div>
     </div>
-
   </div>
-
 </section>
 
+<!-- CTA Section - Split Layout with Vibrant Effects -->
+    <section class="relative bg-black text-[hsla(0,50%,95%,1)] py-20 overflow-hidden">
+
+      <div class="relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
+
+        <!-- Left Side: Text & Buttons -->
+        <div class="md:w-1/2 space-y-6 text-center md:text-left">
+          <!-- Icon Circle -->
+          <div class="flex justify-center mb-6">
+            <div class="w-20 h-20 bg-[hsla(0,50%,95%,0.1)] backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg animate-pulse">
+              <span class="material-icons text-[hsla(33,100%,48%,1)] text-5xl animate-bounce-subtle">call</span>
+            </div>
+          </div>
+
+          <!-- Heading -->
+          <h2 class="text-3xl md:text-5xl font-extrabold leading-snug bg-gradient-to-r from-[hsla(33,100%,48%,1)] to-[hsla(37,100%,50%,1)] bg-clip-text text-transparent animate-fade-in">
+            Need Key Kings Help Fast?
+          </h2>
+
+          <!-- Subtext -->
+          <p class="text-base md:text-lg text-[hsla(0,50%,95%,0.9)] leading-relaxed animate-slide-down">
+            Immediate assistance whenever you need it. Protect your home, office, and family with our trusted and certified locksmiths.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6">
+            <a href="tel:8649009597"
+              class="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[hsla(33,100%,48%,1)] to-[hsla(37,100%,50%,1)] text-[hsla(0,50%,95%,1)] font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-glow">
+              <span class="material-icons text-[hsla(0,50%,95%,1)] text-xl animate-bounce-subtle">call</span>
+              <span>Call (864) 900-9597</span>
+            </a>
+            <a href="book-service.html"
+              class="flex items-center gap-3 px-8 py-4 border-2 border-[hsla(0,50%,95%,1)] bg-transparent text-[hsla(0,50%,95%,1)] font-bold rounded-xl hover:bg-[hsla(40,95%,54%,1)] hover:text-[hsla(0,100%,2%,1)] hover:scale-105 transition-all duration-300 animate-fade-in">
+              <span class="material-icons text-lg">calendar_month</span>
+              <span>Book Service</span>
+            </a>
+          </div>
+
+          <!-- Features - Single Line with Smaller Text -->
+          <div class="flex flex-nowrap justify-center md:justify-start gap-6 mt-6 text-[hsla(0,50%,95%,0.9)] text-sm">
+            <div class="flex items-center gap-1 hover:scale-105 transition-transform duration-300">
+              <span class="material-icons text-[hsla(33,100%,48%,1)] text-base animate-bounce-subtle">schedule</span>
+              <span>24/7 Service</span>
+            </div>
+            <div class="flex items-center gap-1 hover:scale-105 transition-transform duration-300">
+              <span class="material-icons text-[hsla(37,100%,50%,1)] text-base animate-bounce-subtle">verified</span>
+              <span>Licensed & Insured</span>
+            </div>
+            <div class="flex items-center gap-1 hover:scale-105 transition-transform duration-300">
+              <span class="material-icons text-[hsla(33,100%,48%,1)] text-base animate-bounce-subtle">star</span>
+              <span>5-Star Rated</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Illustration / Visual Panel -->
+        <div class="md:w-1/2 relative flex items-center justify-center">
+          <!-- Decorative gradient circle -->
+          <div class="absolute w-72 h-72 bg-[hsla(33,100%,48%,0.15)] rounded-full top-0 right-0 blur-3xl animate-pulse"></div>
+          <div class="absolute w-64 h-64 bg-[hsla(37,100%,50%,0.15)] rounded-full bottom-0 left-0 blur-3xl animate-pulse"></div>
+
+          <!-- Visual Icon / Image -->
+          <div class="w-80 h-80 bg-[hsla(33,100%,48%,0.1)] backdrop-blur-sm rounded-3xl flex items-center justify-center shadow-lg">
+            <span class="material-icons text-[hsla(33,100%,48%,1)] text-8xl animate-bounce">lock</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <!-- Enhanced Footer -->
@@ -481,30 +1456,33 @@
 
   <script src="script.js"></script>
 
-  <!--Customers Review -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            },
-            breakpoints: {
-            640: {
-                slidesPerView: 1,
-            },
-            768: {
-                slidesPerView: 2,
-            },
-            1024: {
-                slidesPerView: 3,
-            },
-            },
-        });
+      const toggleBtn = document.getElementById('toggle-reviews');
+      const reviewCards = document.querySelectorAll('#reviews-grid .review-card');
+
+      // Hide cards 11-20 initially
+      reviewCards.forEach((card, index) => {
+        if(index >= 10) card.classList.add('hidden');
+      });
+
+      toggleBtn.addEventListener('click', () => {
+        const isExpanded = toggleBtn.dataset.expanded === 'true';
+        if(!isExpanded){
+          // Show remaining 10 cards
+          reviewCards.forEach((card, index) => {
+            if(index >= 10) card.classList.remove('hidden');
+          });
+          toggleBtn.textContent = 'Show Less';
+          toggleBtn.dataset.expanded = 'true';
+        } else {
+          // Hide remaining 10 cards
+          reviewCards.forEach((card, index) => {
+            if(index >= 10) card.classList.add('hidden');
+          });
+          toggleBtn.textContent = 'Read More';
+          toggleBtn.dataset.expanded = 'false';
+        }
+      });
     </script>
 
 </body>

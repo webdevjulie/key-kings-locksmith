@@ -1,0 +1,549 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility | Key Kings Locksmith </title>
+  <link rel="icon" href="./images/key-kings-logo.webp" type="image/webp">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#FD9A00',
+              'orange-light': 'rgba(253, 154, 0, 0.1)',
+              'orange-hover': 'rgba(245, 134, 0, 1)',
+              dark: '#0C0000',
+              crimson: '#F9AE19ff',
+              'orange-fire': 'hsla(33, 100%, 48%, 1)'
+            }
+          },
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+            'slide-down': 'slideDown 0.3s ease-out',
+            'bounce-subtle': 'bounceSubtle 2s infinite',
+            'glow': 'glow 2s ease-in-out infinite alternate',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            slideDown: {
+              '0%': { opacity: '0', transform: 'translateY(-10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            bounceSubtle: {
+              '0%, 20%, 50%, 80%, 100%': { transform: 'translateY(0)' },
+              '40%': { transform: 'translateY(-5px)' },
+              '60%': { transform: 'translateY(-3px)' }
+            },
+            glow: {
+              '0%': { boxShadow: '0 0 20px rgba(253, 154, 0, 0.3)' },
+              '100%': { boxShadow: '0 0 30px rgba(253, 154, 0, 0.6)' }
+            }
+          }
+        },
+      }
+    }
+  </script>
+
+  <style>
+    /* Scrollbar Styles (Webkit Browsers: Chrome, Safari, Edge) */
+    ::-webkit-scrollbar {
+      width: 10px;              /* width ng scrollbar */
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;       /* kulay ng track (likod) */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(to bottom, #F58600ff, #F58600ff); /* gradient brand orange */
+      border-radius: 8px;       /* para rounded */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(to bottom, #F58600ff, #F58600ff); /* hover effect */
+    }
+
+    /* Scrollbar Styles (Firefox) */
+    * {
+      scrollbar-width: thin;                /* manipis */
+      scrollbar-color: #F58600ff #f1f1f1;     /* thumb color + track color */
+    }
+
+  </style>
+</head>
+<body class="bg-gray-50 font-poppins">
+
+    <!-- Enhanced Navbar -->
+    <nav class="bg-white shadow-xl fixed top-0 w-full z-50 border-b-2 border-brand-orange/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+        <!-- Enhanced Logo -->
+        <div class="flex-shrink-0">
+            <a href="index.html" class="flex items-center group">
+            <img src="./images/key-kings.jpeg" alt="Company Logo" class="w-12 h-12 object-contain rounded-xl group-hover:scale-105 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+            </a>
+        </div>
+
+        <!-- Enhanced Desktop Menu -->
+        <div class="hidden lg:flex space-x-8 items-center">
+            <a href="services.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">Services</a>
+            <a href="service-areas.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">Service Areas</a>
+            <a href="faq.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">FAQs</a>
+            <a href="reviews.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">Reviews</a>
+            <a href="about.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">About</a>
+            <a href="contact.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">Contact</a>
+            
+            <!-- Enhanced Call & Book Buttons -->
+            <div class="flex items-center space-x-3 ml-4">
+            <a href="tel:+18649009597" class="flex items-center space-x-1 bg-gradient-to-r from-brand-orange to-brand-orange-hover text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 animate-glow">
+                <span class="material-icons">call</span>
+                <span class="whitespace-nowrap">Call (864) 900-9597</span>
+            </a>
+            <a href="book-service.html" class="flex items-center space-x-1 border-2 border-brand-orange text-brand-orange px-6 py-3 rounded-xl font-semibold hover:bg-brand-orange hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <span class="material-icons">schedule</span>
+                <span class="whitespace-nowrap">Book Service</span>
+            </a>
+            </div>
+        </div>
+
+        <!-- Enhanced Mobile Menu Button -->
+        <div class="lg:hidden flex items-center justify-end w-full space-x-2">
+            <!-- Call Button -->
+            <a href="tel:+18649009597" class="flex items-center space-x-1 bg-gradient-to-r from-brand-orange to-brand-orange-hover text-white px-3 py-2 rounded-lg font-semibold shadow-lg text-sm">
+            <span class="material-icons text-base">call</span>
+            <span>Call</span>
+            </a>
+
+            <!-- Book Button -->
+            <a href="book-service.html" class="flex items-center space-x-1 border-2 border-brand-orange text-brand-orange px-3 py-2 rounded-lg font-semibold text-sm">
+            <span class="material-icons text-base">schedule</span>
+            <span>Book</span>
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button id="mobile-menu-button" class="text-gray-700 hover:text-brand-orange focus:outline-none p-2 rounded-lg hover:bg-brand-orange-light transition-colors duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            </button>
+        </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-brand-orange/20 shadow-xl">
+        <div class="px-4 py-4 space-y-2">
+        <a href="services.html" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+            <span class="material-icons text-brand-orange mr-3">build</span>
+            Services
+        </a>
+        <a href="service-areas.html" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+            <span class="material-icons text-brand-orange mr-3">place</span>
+            Service Areas
+        </a>
+        <a href="faq.html" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+            <span class="material-icons text-brand-orange mr-3">help</span>
+            FAQs
+        </a>
+        <a href="reviews.html" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+            <span class="material-icons text-brand-orange mr-3">star</span>
+            Reviews
+        </a>
+        <a href="about.html" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+            <span class="material-icons text-brand-orange mr-3">info</span>
+            About
+        </a>
+        <a href="contact.html" class="flex items-center px-3 py-3 text-gray-700 hover:bg-brand-orange-light hover:text-brand-orange rounded-lg transition-all duration-200">
+            <span class="material-icons text-brand-orange mr-3">call</span>
+            Contact
+        </a>
+        
+        <!-- Mobile CTA Buttons -->
+        <div class="pt-4 space-y-3">
+            <a href="tel:+18649009597" class="flex items-center justify-center space-x-2 bg-gradient-to-r from-brand-orange to-brand-orange-hover text-white py-3 rounded-xl font-semibold shadow-lg">
+            <span class="material-icons">call</span>
+            <span>Call (864) 900-9597</span>
+            </a>
+            <a href="book-service.html" class="flex items-center justify-center space-x-2 border-2 border-brand-orange text-brand-orange py-3 rounded-xl font-semibold">
+            <span class="material-icons">schedule</span>
+            <span>Book Service</span>
+            </a>
+        </div>
+        </div>
+    </div>
+    </nav>
+  <!-- Spacer to prevent content being hidden under navbar -->
+  <div class="h-20"></div>
+
+  <!-- Accessibility Policy Section -->
+<section class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-5xl mx-auto">
+    
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-[#FFAA33] to-[#FFAF1E] rounded-full shadow-lg mb-6">
+        <span class="material-icons text-3xl text-white">gavel</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Accessibility Policy</h1>
+      <p class="text-lg text-gray-600">Last updated: September 23, 2025</p>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="grid gap-8">
+
+      <!-- Commitment -->
+      <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
+        <div class="flex items-start mb-4">
+          <span class="material-icons text-[#FFAA33] text-3xl mr-4">verified_user</span>
+          <h3 class="text-xl font-bold text-gray-900">Our Commitment to Accessibility</h3>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-3">
+          At Key Kings Locksmith, we believe that everyone deserves equal access to information and services. We are committed to providing a website and service experience that is accessible to all individuals, including those with disabilities.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          We strive to adhere to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards and continuously work to improve the accessibility of our digital presence and locksmith services.
+        </p>
+      </div>
+
+      <!-- Website Features -->
+      <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
+        <div class="flex items-start mb-4">
+          <span class="material-icons text-[#FFAF1E] text-3xl mr-4">language</span>
+          <h3 class="text-xl font-bold text-gray-900">Website Accessibility Features</h3>
+        </div>
+        <div class="grid gap-4 text-gray-700 mt-2">
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">article</span>Clear page structure & heading hierarchy</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">menu</span>Consistent navigation menu</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">keyboard</span>Full keyboard navigation support</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">skip_next</span>Skip navigation links for screen readers</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">device_hub</span>Breadcrumbs for page location</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">contrast</span>High contrast color scheme</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">text_fields</span>Readable, scalable fonts up to 200%</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">highlight</span>Focus indicators on interactive elements</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">image</span>Alt text for all images & descriptive links</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">closed_caption</span>Captions/transcripts for videos</div>
+        </div>
+      </div>
+
+      <!-- Physical Service -->
+      <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
+        <div class="flex items-start mb-4">
+          <span class="material-icons text-[#FFAA33] text-3xl mr-4">storefront</span>
+          <h3 class="text-xl font-bold text-gray-900">Physical Service Accessibility</h3>
+        </div>
+        <div class="grid gap-4 text-gray-700 mt-2">
+          <div class="flex items-center"><span class="material-icons text-[#FFAA33] mr-3">call</span>Multiple contact options: phone, email, forms</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAA33] mr-3">hearing</span>TTY/TDD relay services accepted</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAA33] mr-3">schedule</span>Flexible scheduling for special needs</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAA33] mr-3">info</span>Clear explanations of services</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAA33] mr-3">support_agent</span>Patient, understanding support staff</div>
+        </div>
+      </div>
+
+      <!-- Ongoing Efforts -->
+      <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
+        <div class="flex items-start mb-4">
+          <span class="material-icons text-[#FFAF1E] text-3xl mr-4">autorenew</span>
+          <h3 class="text-xl font-bold text-gray-900">Ongoing Efforts</h3>
+        </div>
+        <div class="grid gap-4 text-gray-700 mt-2">
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">search</span>Regular accessibility audits & testing</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">school</span>Staff training on accessibility practices</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">feedback</span>Improvements based on user feedback</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAF1E] mr-3">update</span>Staying updated with new standards</div>
+        </div>
+      </div>
+
+      <!-- Technical Specs -->
+      <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
+        <div class="flex items-start mb-4">
+          <span class="material-icons text-[#FFAA33] text-3xl mr-4">settings</span>
+          <h3 class="text-xl font-bold text-gray-900">Technical Specifications</h3>
+        </div>
+        <div class="grid gap-4 text-gray-700 mt-2">
+          <div class="flex items-center"><span class="material-icons text-[#FFAA33] mr-3">keyboard_voice</span>Screen readers (JAWS, NVDA, VoiceOver)</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAA33] mr-3">keyboard_voice</span>Voice recognition software</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAA33] mr-3">keyboard</span>Keyboard navigation</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAA33] mr-3">web</span>Browser accessibility features</div>
+          <div class="flex items-center"><span class="material-icons text-[#FFAA33] mr-3">smartphone</span>Mobile accessibility features</div>
+        </div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="bg-gradient-to-r from-[#FFF3E0] to-[#FFE0B2] border-l-4 border-[#FFAA33] rounded-2xl p-6 shadow-md">
+        <div class="flex items-start">
+          <span class="material-icons text-[#FFAA33] text-3xl mr-4">support_agent</span>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Accessibility Feedback</h3>
+            <p class="text-gray-700">We welcome your feedback on accessibility. If you encounter any barriers, please contact us:</p>
+            <p class="mt-3 text-gray-700">
+              <strong>Phone:</strong> 864-900-9597 <br>
+              <strong>Email:</strong> <a href="mailto:keykingslocksmithsc@gmail.com" class="text-[#FFAA33] font-medium underline">keykingslocksmithsc@gmail.com</a> <br>
+              <strong>Place:</strong> 4105 Liberty Highway Unit B, Anderson SC 29621
+            </p>
+            <p class="text-gray-700 mt-2">Mobile service available. Quick response guaranteed.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Notice -->
+    <div class="mt-8 text-center">
+      <p class="text-sm text-gray-500">These terms are subject to change without notice. Please review periodically for updates.</p>
+    </div>
+
+  </div>
+</section>
+
+    
+    <!-- Footer -->
+    <footer class="text-gray-300 pt-20 pb-10 px-6 md:px-12 border-t-4 border-brand-orange relative overflow-hidden" 
+            style="background: linear-gradient(135deg, #0C0000 0%, rgba(245, 134, 0, 1) 100%);">
+        
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-20 h-20 border-2 border-brand-orange rounded-full"></div>
+            <div class="absolute top-32 right-20 w-32 h-32 border border-brand-orange rounded-full"></div>
+            <div class="absolute bottom-20 left-1/4 w-16 h-16 border-2 border-brand-orange rounded-full"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-sm">
+            
+        <!-- Enhanced Contact Us -->
+        <div class="space-y-6">
+            <h4 class="text-white font-black text-xl mb-6 relative">
+                <span class="bg-gradient-to-r" style="background: linear-gradient(to right, #FD9A00, #F58600); -webkit-background-clip: text; color: transparent;">
+                Contact Us
+                </span>
+                <div class="absolute -bottom-2 left-0 w-16 h-1 rounded-full" style="background: linear-gradient(to right, #FD9A00, #F58600);"></div>
+            </h4>
+
+            <ul class="space-y-4">
+                <li class="flex items-center group hover:translate-x-2 transition-transform duration-300">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center mr-4 shadow-lg flex-shrink-0" style="background: linear-gradient(to bottom right, #FD9A00, #F58600);">
+                    <span class="material-icons text-white text-lg">call</span>
+                </div>
+                <div>
+                    <p class="font-bold text-white text-lg">864-900-9597</p>
+                    <p class="text-xs text-gray-400">Available 24/7</p>
+                </div>
+                </li>
+                <li class="flex items-center group hover:translate-x-2 transition-transform duration-300">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center mr-4 shadow-lg flex-shrink-0" style="background: linear-gradient(to bottom right, #FD9A00, #F58600);">
+                    <span class="material-icons text-white text-lg">email</span>
+                </div>
+                <div>
+                    <p class="font-semibold text-white">keykingslocksmithsc@gmail.com</p>
+                    <p class="text-xs text-gray-400">Quick response guaranteed</p>
+                </div>
+                </li>
+                <li class="flex items-start group hover:translate-x-2 transition-transform duration-300">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center mr-4 shadow-lg flex-shrink-0 mt-1" style="background: linear-gradient(to bottom right, #FD9A00, #F58600);">
+                    <span class="material-icons text-white text-lg">place</span>
+                </div>
+                <div>
+                    <p class="font-semibold text-white">4105 Liberty Highway Unit B Anderson SC 29621</p>
+                    <p class="text-xs text-gray-400">Mobile service available</p>
+                </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Services (pinalit sa dating Quick Links) -->
+        <div class="space-y-6">
+            <h4 class="text-white font-black text-xl mb-6 relative">
+                <span class="bg-gradient-to-r from-brand-orange to-brand-orange-hover bg-clip-text text-transparent">Services</span>
+                <div class="absolute -bottom-2 left-0 w-20 h-1 bg-gradient-to-r from-brand-orange to-brand-orange-hover rounded-full"></div>
+            </h4>
+
+            <ul class="space-y-3">
+                <li><a href="residential-locksmith.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">home</span> 
+                <span class="font-medium">Residential Locksmith</span>
+                </a></li>
+                <li><a href="commercial-locksmith.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">business</span> 
+                <span class="font-medium">Commercial Locksmith</span>
+                </a></li>
+                <li><a href="automotive-locksmith.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">directions_car</span> 
+                <span class="font-medium">Automotive Locksmith</span>
+                </a></li>
+                <li><a href="emergency-locksmith.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">lock_clock</span> 
+                <span class="font-medium">Emergency Locksmith</span>
+                </a></li>
+                <li><a href="lock-installation.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                <span class="material-icons text-brand-orange text-lg mr-3 group-hover:scale-110 transition-transform duration-300">vpn_key</span> 
+                <span class="font-medium">Lock Installation</span>
+                </a></li>
+            </ul>
+        </div>
+
+        <!-- Service Areas -->
+        <div class="space-y-6">
+            <h4 class="text-white font-black text-xl mb-6 relative">
+                <span class="bg-gradient-to-r from-brand-orange to-brand-orange-hover bg-clip-text text-transparent">Service Areas</span>
+                <div class="absolute -bottom-2 left-0 w-24 h-1 bg-gradient-to-r from-brand-orange to-brand-orange-hover rounded-full"></div>
+            </h4>
+
+            <ul class="space-y-3">
+                <li class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                    <span class="material-icons text-brand-orange text-sm mr-2">location_on</span>
+                    <a href="service-areas.html" class="text-white font-medium hover:text-brand-orange transition">Anderson, SC</a>
+                </li>
+                <li class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                    <span class="material-icons text-brand-orange text-sm mr-2">location_on</span>
+                    <a href="service-areas.html" class="text-white font-medium hover:text-brand-orange transition">Greenville, SC</a>
+                </li>
+                <li class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                    <span class="material-icons text-brand-orange text-sm mr-2">location_on</span>
+                    <a href="service-areas.html" class="text-white font-medium hover:text-brand-orange transition">Clemson, SC</a>
+                </li>
+                <li class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                    <span class="material-icons text-brand-orange text-sm mr-2">location_on</span>
+                    <a href="service-areas.html" class="text-white font-medium hover:text-brand-orange transition">Easley, SC</a>
+                </li>
+                <li class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                    <span class="material-icons text-brand-orange text-sm mr-2">location_on</span>
+                    <a href="service-areas.html" class="text-white font-medium hover:text-brand-orange transition">Pendleton, SC</a>
+                </li>
+                <li class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                    <span class="material-icons text-brand-orange text-sm mr-2">location_on</span>
+                    <a href="service-areas.html" class="text-white font-medium hover:text-brand-orange transition">Williamston, SC</a>
+                </li>
+                <li class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                    <span class="material-icons text-brand-orange text-sm mr-2">location_on</span>
+                    <a href="service-areas.html" class="text-white font-medium hover:text-brand-orange transition">Belton, SC</a>
+                </li>
+                <li class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                    <span class="material-icons text-brand-orange text-sm mr-2">location_on</span>
+                    <a href="service-areas.html" class="text-white font-medium hover:text-brand-orange transition">Liberty, SC</a>
+                </li>
+                <li class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                    <span class="material-icons text-brand-orange text-sm mr-2">location_on</span>
+                    <a href="service-areas.html" class="text-white font-medium hover:text-brand-orange transition">Seneca, SC</a>
+                </li>
+                <li class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2">
+                    <span class="material-icons text-brand-orange text-sm mr-2">location_on</span>
+                    <a href="service-areas.html" class="text-white font-medium hover:text-brand-orange transition">Pickens, SC</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Enhanced Trust & Social -->
+        <div class="space-y-6">
+            <!-- Quick Links -->
+            <div class="space-y-6">
+            <h4 class="text-white font-black text-xl mb-6 relative">
+                <span class="bg-gradient-to-r from-brand-orange to-brand-orange-hover bg-clip-text text-transparent">Quick Links</span>
+                <div class="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-brand-orange to-brand-orange-hover rounded-full"></div>
+            </h4>
+            
+            <ul class="space-y-3 mb-8">
+                <li><a href="services.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2"><span class="material-icons text-brand-orange text-lg mr-3">build</span><span class="font-medium">Services</span></a></li>
+                <li><a href="service-areas.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2"><span class="material-icons text-brand-orange text-lg mr-3">map</span><span class="font-medium">Service Areas</span></a></li>
+                <li><a href="faq.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2"><span class="material-icons text-brand-orange text-lg mr-3">help</span><span class="font-medium">FAQ</span></a></li>
+                <li><a href="reviews.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2"><span class="material-icons text-brand-orange text-lg mr-3">star</span><span class="font-medium">Reviews</span></a></li>
+                <li><a href="about.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2"><span class="material-icons text-brand-orange text-lg mr-3">info</span><span class="font-medium">About Us</span></a></li>
+                <li><a href="blog.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2"><span class="material-icons text-brand-orange text-lg mr-3">article</span><span class="font-medium">Blog</span></a></li>
+                <li><a href="contact.html" class="flex items-center hover:text-brand-orange transition-all duration-300 group hover:translate-x-2"><span class="material-icons text-brand-orange text-lg mr-3">article</span><span class="font-medium">Contact</span></a></li>
+            </ul>
+            </div>
+            <!-- Enhanced Social Links -->
+            <div>
+            <h5 class="text-white font-bold text-lg mb-4">Follow Us</h5>
+            <div class="flex space-x-4">
+                <a href="https://www.tiktok.com/@keykingslcksmt " target="_blank" 
+                class="group w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-brand-orange/30 hover:scale-110 transition-all duration-300">
+                <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                </svg>
+                </a>
+
+                <a href="https://www.instagram.com/keykingslcksmt" target="_blank"
+                class="group w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-brand-orange/30 hover:scale-110 transition-all duration-300">
+                <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                </a>
+
+                <a href="https://www.instagram.com/keykingslcksmt " target="_blank"
+                class="group w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-brand-orange/30 hover:scale-110 transition-all duration-300">
+                <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                </a>
+
+                <a href="https://x.com/keykingslcksmt" target="_blank"
+                class="group w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-brand-orange/30 hover:scale-110 transition-all duration-300">
+                <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                </svg>
+                </a>
+
+                <a href="https://www.youtube.com/@keykingslcksmt" target="_blank"
+                class="group w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-orange-hover rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-brand-orange/30 hover:scale-110 transition-all duration-300">
+                <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+                </a>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Enhanced Bottom Bar -->
+        <div class="relative z-10 mt-16 pt-8 border-t-2 border-brand-orange/30">
+        <div class="flex flex-col items-center justify-center max-w-7xl mx-auto px-6 gap-6 text-center">
+            
+            <!-- Copyright & Made By -->
+            <div class="flex flex-col items-center gap-4">
+                <div class="flex items-center gap-2">
+                <span class="text-gray-200">Made with</span>
+                <span class="text-red-500 animate-bounce text-xl">❤️</span>
+                <span class="text-gray-200">by</span>
+                <a href="https://gettmarketing.com/" target="_blank" 
+                class="bg-gradient-to-r from-brand-orange to-brand-orange-hover bg-clip-text text-transparent font-bold hover:scale-110 transition-transform duration-300">
+                Gett Marketing
+                </a>
+            </div>
+            <p class="text-gray-300 font-medium">© 2025 Key Kings Locksmith. All rights reserved.</p>
+            </div>
+
+            <!-- Legal Links -->
+            <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+            <a href="privacy-policy.html" class="text-gray-200 hover:text-brand-orange font-medium transition-colors duration-300 hover:scale-110">Privacy Policy</a>
+            <a href="terms-and-conditions.html" class="text-gray-200 hover:text-brand-orange font-medium transition-colors duration-300 hover:scale-110">Terms & Conditions</a>
+            <a href="accessibility-policy.html" class="text-gray-200 hover:text-brand-orange font-medium transition-colors duration-300 hover:scale-110">Accessibility</a>
+            </div>
+        </div>
+
+        <!-- Emergency Call Button - Floating -->
+        <div class="fixed bottom-6 right-6 z-50 lg:hidden">
+            <a href="tel:+5743187797" 
+            class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-brand-orange to-brand-orange-hover text-white rounded-full shadow-2xl hover:shadow-brand-orange/50 animate-bounce-subtle">
+            <span class="material-icons text-2xl">call</span>
+            </a>
+        </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
