@@ -97,27 +97,61 @@
           </a>
         </div>
 
-        <!-- Enhanced Desktop Menu -->
-        <div class="hidden lg:flex space-x-8 items-center">
-          <a href="services.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">Services</a>
-          <a href="service-areas.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">Service Areas</a>
-          <a href="faq.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">FAQs</a>
-          <a href="reviews.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">Reviews</a>
-          <a href="about.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">About</a>
-          <a href="contact.html" class="text-gray-700 hover:text-brand-orange font-semibold py-2 px-2 rounded-lg hover:bg-brand-orange-light transition-all duration-300">Contact</a>
-          
-          <!-- Enhanced Call & Book Buttons -->
-          <div class="flex items-center space-x-3 ml-4">
-            <a href="tel:+18649009597" class="flex items-center space-x-1 bg-gradient-to-r from-brand-orange to-brand-orange-hover text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 animate-glow">
-              <span class="material-icons">call</span>
-              <span class="whitespace-nowrap">Call (864) 900-9597</span>
-            </a>
-            <a href="book-service.html" class="flex items-center space-x-1 border-2 border-brand-orange text-brand-orange px-6 py-3 rounded-xl font-semibold hover:bg-brand-orange hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300">
-              <span class="material-icons">schedule</span>
-              <span class="whitespace-nowrap">Book Service</span>
-            </a>
-          </div>
+        <!-- Desktop Menu -->
+      <div class="hidden lg:flex space-x-8 items-center">
+        <a href="services.html" 
+           class="relative font-semibold text-gray-700 py-2 px-2 rounded-lg transition-all duration-300 
+                  hover:text-brand-orange hover:bg-brand-orange-light
+                  aria-[current=page]:text-brand-orange aria-[current=page]:bg-brand-orange-light">
+          Services
+        </a>
+        <a href="service-areas.html" 
+           class="relative font-semibold text-gray-700 py-2 px-2 rounded-lg transition-all duration-300 
+                  hover:text-brand-orange hover:bg-brand-orange-light
+                  aria-[current=page]:text-brand-orange aria-[current=page]:bg-brand-orange-light">
+          Service Areas
+        </a>
+        <a href="faq.html" 
+           class="relative font-semibold text-gray-700 py-2 px-2 rounded-lg transition-all duration-300 
+                  hover:text-brand-orange hover:bg-brand-orange-light
+                  aria-[current=page]:text-brand-orange aria-[current=page]:bg-brand-orange-light">
+          FAQs
+        </a>
+        <a href="reviews.html" 
+           class="relative font-semibold text-gray-700 py-2 px-2 rounded-lg transition-all duration-300 
+                  hover:text-brand-orange hover:bg-brand-orange-light
+                  aria-[current=page]:text-brand-orange aria-[current=page]:bg-brand-orange-light">
+          Reviews
+        </a>
+        <a href="about.html" 
+           class="relative font-semibold text-gray-700 py-2 px-2 rounded-lg transition-all duration-300 
+                  hover:text-brand-orange hover:bg-brand-orange-light
+                  aria-[current=page]:text-brand-orange aria-[current=page]:bg-brand-orange-light">
+          About
+        </a>
+        <a href="contact.html" 
+           class="relative font-semibold text-gray-700 py-2 px-2 rounded-lg transition-all duration-300 
+                  hover:text-brand-orange hover:bg-brand-orange-light
+                  aria-[current=page]:text-brand-orange aria-[current=page]:bg-brand-orange-light">
+          Contact
+        </a>
+
+        <!-- Call & Book Buttons -->
+        <div class="flex items-center space-x-3 ml-4">
+          <a href="tel:+18649009597" 
+             class="flex items-center space-x-1 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg
+                    bg-gradient-to-r from-brand-orange to-brand-orange-hover text-white">
+            <span class="material-icons">call</span>
+            <span class="whitespace-nowrap">Call (864) 900-9597</span>
+          </a>
+          <a href="book-service.html" 
+             class="flex items-center space-x-1 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg
+                    border-2 border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white">
+            <span class="material-icons">schedule</span>
+            <span class="whitespace-nowrap">Book Service</span>
+          </a>
         </div>
+      </div>
 
         <!-- Enhanced Mobile Menu Button -->
         <div class="lg:hidden flex items-center justify-end w-full space-x-2">
@@ -1127,6 +1161,19 @@
             },
         });
     </script>
+
+    <script>
+      const currentPath = window.location.pathname.split("/").pop().split("?")[0].split("#")[0] || "index.html";
+      const navLinks = document.querySelectorAll("nav a");
+
+      navLinks.forEach(link => {
+        const linkPath = link.getAttribute("href");
+        if (linkPath === currentPath) {
+          link.setAttribute("aria-current", "page");
+        }
+      });
+    </script>
+
 
 </body>
 </html>
